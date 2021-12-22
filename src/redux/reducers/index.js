@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 
-import filtetsReducer from './filters'
+import filtersReducer from './filters'
 import pizzasReducer from './pizzas'
 
 const rootReducer = combineReducers({
-  filtets: filtetsReducer,
+  filters: filtersReducer,
   pizzas: pizzasReducer
 })
 
