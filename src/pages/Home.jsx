@@ -43,7 +43,7 @@ function Home() {
       <h2 className="content__title">Все пиццы</h2>
       <div className="content__items">
         {isLoaded ?
-          items.map(obj => <PizzaBlock onClickAddPizza={handleAddPizzaToCart} key={obj.id} addedCount={cartItems[obj.id] && cartItems[obj.id].length} {...obj} />) : Array(12).fill('').map((_, index) => <PizzaLoadingBlock key={index} />)
+          items.map(obj => <PizzaBlock onClickAddPizza={handleAddPizzaToCart} key={obj.id} addedCount={cartItems[obj.id] && cartItems[obj.id].items.length} {...obj} />) : Array(12).fill('').map((_, index) => <PizzaLoadingBlock key={index} />)
         }
       </div>
     </div>
